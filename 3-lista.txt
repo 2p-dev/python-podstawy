@@ -66,3 +66,53 @@ False
 [123, 4.5, ['a', 'b', 'c']]
 >>> lst[2]
 ['a', 'b', 'c']
+
+
+## Dodawanie elementów do listy
+
+>>> lst = [123, 'world']
+>>> lst[2]     # Python sprawdza zakres
+IndexError: list index out of range
+>>> lst[len(lst)] = 4.5  # Nie można dodać elementu poza zakres listy indeksowaniem
+IndexError: list assignment index out of range
+>>> lst[len(lst):] = [4.5]  # Ale można z wykorzystaniem 'slicing'
+>>> lst
+[123, 'world', 4.5]
+>>> lst[len(lst):] = [6, 7, 8]  # Dodawnie kilku elementów
+>>> lst
+[123, 'world', 4.5, 6, 7, 8]
+>>> lst.append('nine')  # Dodawanie jednego elementu na końcu
+>>> lst
+[123, 'world', 4.5, 6, 7, 8, 'nine']
+>>> lst.extend(['a', 'b'])  # dodawanie listy elementów
+>>> lst
+[123, 'world', 4.5, 6, 7, 8, 'nine', 'a', 'b']
+
+>>> lst + ['c']  # '+' zwraca nową listę; podczas gdy przypisywanie z wykorzystaniem slicing modyfikuje listę i zwraca None
+[123, 'world', 4.5, 6, 7, 8, 'nine', 'a', 'b', 'c']
+>>> lst  # Bez zmian!
+[123, 'world', 4.5, 6, 7, 8, 'nine', 'a', 'b']
+
+## Kopiowanie listy
+
+>>> l1 = [123, 4.5, 'hello']
+>>> l2 = l1[:]   # Tworzenie kopii przez slicing
+>>> l2
+[123, 4.5, 'hello']
+>>> l2[0] = 8    # Modyfikacja nowej kopii
+>>> l2
+[8, 4.5, 'hello']
+>>> l1           # Bez zmian w oryginalnej liście
+[123, 4.5, 'hello']
+
+>>> l3 = l1.copy()   # Utworzenie kopii z wykorzystaniem funkcji copy(), rezultat jak wyżej
+
+# Porównanie z bezpośrednim przypisaniem
+>>> l4 = l1    # Bezpośrednie przypisanie (referencji)
+>>> l4
+[123, 4.5, 'hello']
+>>> l4[0] = 8  # Modyfikacja nowej kopii
+>>> l4
+[8, 4.5, 'hello']
+>>> l1         # Pierwotna lista również się zmienia
+[8, 4.5, 'hello']
