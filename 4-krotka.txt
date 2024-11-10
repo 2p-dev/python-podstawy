@@ -1,0 +1,47 @@
+>>> tup = (123, 4.5, 'hello')  # krotka może zawierać elementy różnych typów
+>>> tup
+(123, 4.5, 'hello')
+>>> tup[1]           # indeksowanie elementu
+4.5
+>>> tup[1:3]         # Slicing aby otrzymać pod-krotkę
+(4.5, 'hello')
+>>> tup[1] = 9       # krotki w przeciwieńswtie do list są niemutowalne (niezmienialne)
+TypeError: 'tuple' object does not support item assignment
+>>> type(tup)
+<class 'tuple'>
+>>> lst = list(tup)  # Konwersja do listy
+>>> lst
+[123, 4.5, 'hello']
+>>> type(lst)
+<class 'list'>
+
+
+>>> tup = (5,)  # Do zapisu krotki z jednym elementem należy użyć przecinka na końcu
+>>> tup
+(5,)
+>>> x = (5)     # W przeciwnym wypadku zostanie potraktowany jako nawias arytmetyczny
+>>> x
+5
+
+
+>>> tup = 123, 4.5, 'hello'
+>>> tup
+(123, 4.5, 'hello')
+>>> tup2 = 88,  # krotka z jednym elementem potrzebuje przecinka na końcu
+>>> tup2
+(88,)
+
+# Jednakże można użyć pustych nawiasów aby utworzyć pustą krotkę
+# Chociaż puste krotki są bezużyteczne, ponieważ są niezmienialne (niemutowalne)
+>>> tup3 = ()
+>>> tup3
+()
+>>> len(tup3)
+0
+
+
+
+>>> tuple([1, 2, 3, 1])  # Konwersja listy na krotkę
+(1, 2, 3, 1)
+>>> list((1, 2, 3, 1))   # Konwersja krotki na listę
+[1, 2, 3, 1]
