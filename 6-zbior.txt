@@ -1,0 +1,38 @@
+>>> st = {123, 4.5, 'hello', 123, 'Hello'}
+>>> st         # Duplikaty są usuwane i porządek moze się zmienić
+{'Hello', 'hello', 123, 4.5}
+>>> 123 in st  # Sprawdzanie przynależności
+True
+>>> 88 in st
+False
+
+# Użycie wbudowanej funkcji set() do stworzenia zbioru
+>>> st2 = set([2, 1, 3, 1, 3, 2])  # Konwersja listy na zbiór, duplikaty są usuwane a porządek nie musi być zachowany
+>>> st2
+{1, 2, 3}
+>>> st3 = set('hellllo')  # Konwersja typu str na zbiór znaków
+>>> st3
+{'o', 'h', 'e', 'l'}
+
+
+
+
+
+# Operatory
+
+>>> st1 = {'a', 'e', 'i', 'o', 'u'}
+>>> st1
+{'e', 'o', 'u', 'a', 'i'}
+>>> st2 = set('hello')  # Konwersja typu str na zbiór znaków
+>>> st2
+{'o', 'l', 'e', 'h'}
+>>> st1 & st2   # Część wspólna zbioru
+{'o', 'e'}
+>>> st1 | st2   # Połączenie zbiorów
+{'o', 'l', 'h', 'i', 'e', 'a', 'u'}
+>>> st1 - st2   # Różnica zbiorów
+{'i', 'u', 'a'}
+>>> st1 ^ st2   # xor
+{'h', 'i', 'u', 'a', 'l'}
+
+
