@@ -1,0 +1,67 @@
+>>> dct = {'imie':'Adam', 'nazwisko':'Testowy', 'wiek':21}
+>>> dct
+{'wiek': 21, 'imie': 'Adam', 'nazwisko': 'Testowy'}
+>>> dct['imie']       # Pobranie wartości z wykorzystaniem klucza
+'Adam'
+>>> dct['wiek'] = 22   # Przypisanie wartości
+>>> dct
+{'wiek': 22, 'imie': 'Adam', 'nazwisko': 'Testowy'}
+>>> len(dct)
+3
+>>> dct['email'] = 'Adam@testowymail.com'   # Dodawanie nowej pary klucz-wartość
+>>> dct
+{'imie': 'Adam', 'wiek': 22, 'email': 'Adam@testowymail.com', 'nazwisko': 'Testowy'}
+>>> type(dct)
+<class 'dict'>
+
+# Użycie wbudowanej funkcji dict() aby stworzyć słownik
+>>> dct2 = dict([('a', 1), ('c', 3), ('b', 2)])  # Konwertuje listę 2 elementowych krotek na słownik
+>>> dct2
+{'b': 2, 'c': 3, 'a': 1}
+
+
+>>> dct = {'imie':'Adam', 'wiek':22, 'nazwisko':'Testowy'}
+>>> dct
+{'nazwisko': 'Testowy', 'imie': 'Adam', 'wiek': 22}
+
+>>> type(dct)  # 
+<class 'dict'>
+>>> dir(dct)   # Lista wszystkich atrybutów słownika
+......
+
+>>> list(dct.keys())       # Pobranie wszystkich kluczy
+['nazwisko', 'imie', 'wiek']
+>>> list(dct.values())     # Pobranei wszystkich wartości
+['Testowy', 'Adam', 22]
+>>> list(dct.items())      # Pobranie kluczy i wartości jako listy krotek
+[('nazwisko', 'Testowy'), ('imie', 'Adam'), ('wiek', 22)]
+
+# Użycie funkcji get() to pobrania wartości o podanym kluczu
+>>> dct.get('wiek', 'brak takiego klucza')  # Pobranie obiektu
+22
+>>> dct.get('wzrost', 'brak takiego klucza')
+'brak takiego klucza'
+>>> dct['wzrost']
+KeyError: 'wzrost'
+    # Indeksowanie z użyciem nieprawidłowego klucza zwraca błąd KeyError,
+    # podczas gdy get() obsługuje nieistniejący klucz
+
+>>> del dct['wiek']   # usunięcie elementu o podanym kluczu
+>>> dct
+{'nazwisko': 'Testowy', 'imie': 'Adam'}
+
+>>> 'imie' in dct
+True
+
+>>> dct.update({'wzrost':180, 'waga':75})  # Połączenie słowników
+>>> dct
+{'wzrost': 180, 'nazwisko': 'Testowy', 'imie': 'Adam', 'waga': 75}
+
+>>> dct.pop('nazwisko')  # Usunięcie elementu i zwrócenie go
+'Testowy'
+>>> dct
+{'imie': 'Adam', 'waga': 75, 'wzrost': 180}
+>>> dct.pop('nieistniejacy_klucz')   # Wyrzuca błąd KeyError jeżeli klucz nie został znaleziony
+KeyError: 'nieistniejacy_klucz'
+>>> dct.pop('nieistniejacy_klucz', 'nie znaleziono')   # Zwrócenie zadanegj wartości jeśli klucz nie został znaleziony
+'nie znaleziono'
