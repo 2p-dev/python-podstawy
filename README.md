@@ -8,6 +8,7 @@ https://docs.google.com/presentation/d/1QeyDuwr1ez5F7j6lcx-L4u3GCWRMlVKuqyH5F0vR
 ## Oficjalny tutorial języka Python (większość po polsku)
 
 https://docs.python.org/pl/3/tutorial/introduction.html
+
 https://docs.python.org/pl/3/tutorial/index.html
 
 
