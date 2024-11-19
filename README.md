@@ -21,3 +21,8 @@ https://1drv.ms/f/s!Au9BMXuPmpzzgY0kcoh7lQOv3RRRXA?e=Lg0O2J
 
 - https://www.python.org/downloads/
 - https://code.visualstudio.com/
+
+
+## Przykładowy egzamin PCEP-30-02
+
+https://www.itexams.com/exam/PCEP-30-02
