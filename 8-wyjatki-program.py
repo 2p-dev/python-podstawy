@@ -8,6 +8,11 @@ class TooBigError(Exception):
         self.message = message
         super().__init__(self.message)
 
+class InvalidOperation(Exception):
+    def __init__(self, message):
+        self.message = message
+        super().__init__(self.message)
+        
 try:
     while True:
         print('Kalkulator')
@@ -29,6 +34,8 @@ try:
                 wynik = a % b
             elif op == '//':
                 wynik = a // b
+            else:
+                raise InvalidOperation('Nieprawidłowa operacja')
             print('wynik', wynik)
         except TooBigError as tbe:
             print('Błąd podanej wartości (TooBigError):', tbe)
@@ -36,6 +43,8 @@ try:
             print('Błąd podanej wartości (ValueError):', ve)
         except ZeroDivisionError:
             print('Błąd dzielenia przez 0')
+        except InvalidOperation as e:
+            print(e)
 except KeyboardInterrupt:
     print('Dziękuję za skorzystanie z kalkulatora')
 
