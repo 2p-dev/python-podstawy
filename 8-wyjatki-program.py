@@ -14,7 +14,7 @@ try:
         try:
             a = int(input("Podaj pierwszą liczbę, musi być < 10: "))
             if a >= 10:
-                raise TooBigError('wartość jest większa lub równa 0')
+                raise TooBigError('wartość jest większa lub równa 10')
             b = int(input("Podaj drugą liczbę: "))
             op = input('Podaj operację matematyczną: ')
             if op == '+':
