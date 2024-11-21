@@ -12,11 +12,20 @@ https://docs.python.org/pl/3/tutorial/introduction.html
 https://docs.python.org/pl/3/tutorial/index.html
 
 
-# "Zanurkuj w Pythonie" - Mark Pilgrim
+## "Zanurkuj w Pythonie" - Mark Pilgrim
 
 https://pl.wikibooks.org/wiki/Zanurkuj_w_Pythonie
 
 https://upload.wikimedia.org/wikibooks/pl/5/5e/Zanurkuj_w_Pythonie.pdf
+
+
+## Język programowania Python &ndash; Ćwiczenia online – Umiemy informatykę
+
+https://www.umiemyinformatyke.pl/programowanie-programowanie-w-pythonie
+
+## Interaktywny samouczek w języku Python 3 z ponad 100 ćwiczeniami
+
+https://snakify.org/pl/
 
 
 ## Podręczniki
