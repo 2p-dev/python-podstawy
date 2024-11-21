@@ -25,5 +25,5 @@ print(liczby)  # [4, 5]
 liczby = []
 for i in range(0, 5):
     if i > 2:
-        liczby.append(x + 1)
+        liczby.append(i + 1)
 
