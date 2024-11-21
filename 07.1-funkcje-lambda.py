@@ -25,5 +25,5 @@ rezultat = list(map(lambda x: x+1, filter(lambda x: x > 4, lista))) # Wynik [7, 
 # sumowanie elementów listy z wykorzystaniem reduce
 from functools import reduce
 lista = [2, 4, 6, 8]
-rezultat = list(reduce(lambda x, y: x + y, lista, 0)) # 0 to element początkowy, podstawiany za zmienną x przy pierwszym przejściu pętli
+rezultat = reduce(lambda x, y: x + y, lista, 0) # 0 to element początkowy, podstawiany za zmienną x przy pierwszym przejściu pętli
 # Wynik 20
