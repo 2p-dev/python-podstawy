@@ -1,6 +1,14 @@
 # https://www.python.org/downloads/
 # https://code.visualstudio.com/
 
+# Ten plik zawiera wyrażenia, które zadziałają w linii poleceń języka Python
+# aby go uruchomić: 
+#    - wybierz z Menu Start (Windows) aplikację Python 3.xx, lub
+#    - uruchom z Menu Start (Windows) Wiersz Polecenia i uruchom impterpreter komendą 'python' lub 'py'
+# Wyrażenia można kopiować z tego pliku i wstawiać do interpretera Python
+# W razie konieczności uruchomienia tego jako kodu w IDE, np Visual Studio Code, należy użyć funkcji print() 
+# wszędzie tam, gdzie chcemy wypisać coś na ekranie
+
 3 + 3
 3*7
 500 - 43 * 5
