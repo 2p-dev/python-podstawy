@@ -1,11 +1,12 @@
 # Listy składane / wyrażenia listowe (list comprehension)
 
-nowa_lista = [transformacja(x) for x in stara_lista]
+# nowa_lista = [transformacja(x) for x in stara_lista]
 
-# Jest równoznaczne z:
-nowa_lista = []
-for x in stara_lista:
-    nowa_lista.append(transformacja(x))
+# # Jest równoznaczne z:
+
+# nowa_lista = []
+# for x in stara_lista:
+#     nowa_lista.append(transformacja(x))
 
 
 imiona = ["Ada", "Basia", "Celina"]
@@ -23,6 +24,6 @@ print(liczby)  # [4, 5]
 # powyższe jest równoznaczne z:
 liczby = []
 for i in range(0, 5):
-    if x > 2:
+    if i > 2:
         liczby.append(x + 1)
 
