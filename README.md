@@ -12,6 +12,13 @@ https://docs.python.org/pl/3/tutorial/introduction.html
 https://docs.python.org/pl/3/tutorial/index.html
 
 
+# "Zanurkuj w Pythonie" - Mark Pilgrim
+
+https://pl.wikibooks.org/wiki/Zanurkuj_w_Pythonie
+
+https://upload.wikimedia.org/wikibooks/pl/5/5e/Zanurkuj_w_Pythonie.pdf
+
+
 ## Podręczniki
 
 https://1drv.ms/f/s!Au9BMXuPmpzzgY0kcoh7lQOv3RRRXA?e=Lg0O2J
