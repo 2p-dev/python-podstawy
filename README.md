@@ -42,3 +42,5 @@ https://1drv.ms/f/s!Au9BMXuPmpzzgY0kcoh7lQOv3RRRXA?e=Lg0O2J
 ## Przykładowy egzamin PCEP-30-02
 
 https://www.itexams.com/exam/PCEP-30-02
+
+https://github.com/dark-teal-coder/gitbook-PCEP-30-02-practice-test-compendium
