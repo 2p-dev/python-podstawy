@@ -44,3 +44,7 @@ https://1drv.ms/f/s!Au9BMXuPmpzzgY0kcoh7lQOv3RRRXA?e=Lg0O2J
 https://www.itexams.com/exam/PCEP-30-02
 
 https://github.com/dark-teal-coder/gitbook-PCEP-30-02-practice-test-compendium
+
+> https://github.com/dark-teal-coder/gitbook-PCEP-30-02-practice-test-compendium/blob/main/part-3-or-final-practice-test/final-practice-test/final-practice-test.md
+> https://github.com/dark-teal-coder/gitbook-PCEP-30-02-practice-test-compendium/blob/main/part-2-or-study-pages-and-exam-section-questions/practice-test/pcep-30-02-practice-test-exam-blocks-1-4.md
+> https://github.com/dark-teal-coder/gitbook-PCEP-30-02-practice-test-compendium/blob/main/appendix-01-solutions-to-practice-questions.md
